@@ -316,11 +316,12 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 ## INSTALL HOMEBREW AND COMMANDLINE TOOLS MISSING IN OSX, ALONG WITH SOME PRETTINESS
 xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install wget cmake watch gnu-sed coreutils psutils tmux tmux-mem-cpu-load git
+brew install wget cmake watch gnu-sed coreutils psutils tmux tmux-mem-cpu-load git zsh mc wget vim
 
 ## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
 sudo curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
+git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
 ## INSTALL CASKROOM AND ALL APPLICATIONS
 brew install caskroom/cask/brew-cask
