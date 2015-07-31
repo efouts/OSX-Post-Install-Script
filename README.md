@@ -1,5 +1,6 @@
 OSX Settings, Applications and Configurations 
 =============================================
+Menu and Checklist installs are WIP. 
 
 The install.sh script will install the following:
 
