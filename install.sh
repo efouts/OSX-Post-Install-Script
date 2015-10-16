@@ -362,6 +362,9 @@ brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine k
 
 ## VIRTUALIZATION / CONTAINERS
 brew cask install boot2docker vagrant vmware-fusion virtualbox
+###Docker Toolbox
+wget https://github.com/docker/toolbox/releases/download/v1.8.3/DockerToolbox-1.8.3.pkg
+sudo installer -pkg DockerToolbox-1.8.3.pkg -target /
 
 ## GRAPHICS APPS
 ## Set "wacom-tablet" to "wacom-bamboo-tablet" for bamboo users
