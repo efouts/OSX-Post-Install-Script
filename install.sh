@@ -327,7 +327,7 @@ git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugi
 brew install caskroom/cask/brew-cask
  
 ## CODING TOOLS
-brew cask install bee iterm2 sourcetree github chefdk
+brew cask install bee iterm2 sourcetree github-desktop chefdk
 
 ## PICK AN EDITOR
 brew cask install sublime-text
@@ -354,7 +354,7 @@ git clone https://github.com/phyllisstein/HipsterIpsum.git ~/Library/Application
 #brew cask install textwrangler 
 
 ## PICK A MOCKUP APP
-brew cask install balsamiq
+brew cask install balsamiq-mockups
 #brew cask install pencil
 
 ## SYSTEM UTILITIES 
