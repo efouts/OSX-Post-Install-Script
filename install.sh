@@ -436,6 +436,8 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 
 ## ADD ATOM TO DOCK
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+##Restart Dock
+killall Dock
 
 ## RUN A MACOS UPDATE
 sudo softwareupdate --install -all
