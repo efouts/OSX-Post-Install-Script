@@ -389,9 +389,14 @@ brew cask install chromecast chrome-remote-desktop-host google-chrome && default
 ###############################################################################################################
 
 ## INSTALL DB TOOLS
-brew cask install navicat-for-postgresql toad
+brew cask install navicat-for-postgresql 
+#This appears to have been removed :(
+#brew cask install toad
+
 ## INSTANT MESSAGING
-brew cask install adium colloquy slack
+brew cask install colloquy slack
+#removed adium
+#brew cask install adium
 
 ## INSTALL BACKUP APPS
 brew cask install backblaze carbon-copy-cloner
@@ -400,7 +405,9 @@ brew cask install backblaze carbon-copy-cloner
 brew cask install lastpass-universal silverlight flash-player
 
 ## SPOTIFY
-brew cask install spotify spotify-menubar spotify-notifications
+brew cask install spotify spotify-notifications
+###removed spotify menubar
+#brew cask install spotify-menubar
 
 ## CONFIGURE ITERM TO NOT PROMPT ON QUIT
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
