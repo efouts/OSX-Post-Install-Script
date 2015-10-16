@@ -2,10 +2,10 @@ OSX Settings, Applications and Configurations
 =============================================
 Menu and Checklist installs are WIP. 
 
-The install.sh script will install the following:
+The install.sh script *can* install the following:
 
  - Moom - http://manytricks.com/moom/
- - TextMate - http://macromates.com/download
+ - TextMate - http://macromates.com/download (no longer default)
  - Adobe Creative Cloud - http://www.adobe.com/appsmanager/
  - Alfred - http://www.alfredapp.com
  - iStat Menus - http://bjango.com/mac/istatmenus/
@@ -18,20 +18,20 @@ The install.sh script will install the following:
  - Microsoft SilverLight - http://www.microsoft.com/silverlight/
  - DiskInventoryX - http://www.derlien.com/
  - SourceTree - https://itunes.apple.com/ca/app/sourcetree-git-hg/id411678673?mt=12
- - Adium - https://adium.im/
+ - _Adium - https://adium.im/_ REMOVED
  - Nik Software Collection - https://www.google.com/nikcollection/ 
  - Backblaze - https://www.backblaze.com/
  - Balsamiq Mockups - http://balsamiq.com/download/
  - BeyondCompare - http://www.scootersoftware.com/download.php
  - Carbon Copy Cloner - https://bombich.com/download
  - RoyalTS - http://www.royalts.com/main/home/osx.aspx
- - GitHub - https://mac.github.com/
+ - GitHub Desktop - https://mac.github.com/
  - Google AppEngine Launcher
  - iTerm (with solarize theme)
  - JDownloader - http://jdownloader.org:8080/download/index
  - Spotify - https://www.spotify.com/ca-en/download/mac/
  - Atom - https://atom.io/download/mac
- - Sublime Text - http://www.sublimetext.com/2
+ - Sublime Text - http://www.sublimetext.com/2 (no longer default)
  - Bee - https://itunes.apple.com/ca/app/bee-issue-tracking-made-native/id726099620?mt=12
  - KeePassX - http://www.keepassx.org/
  - The Unarchiver - http://wakaba.c3.cx/s/apps/unarchiver
@@ -51,7 +51,7 @@ Commandline Apps
  - [Homebrew](http://brew.sh) 
  - [Oh My ZSH!](http://ohmyz.sh) 
  - [OSX Developer Tools](https://developer.apple.com/downloads/index.action) 
- - [Github Desktop](http://git-scm.com/download/mac)
+ - [Github](http://git-scm.com/download/mac)
  - [Chef DK](https://downloads.getchef.com/chef-dk/mac/)
  - [caskroom](http://caskroom.io) (the real magic here)
  - [Hashicorp's Otto](https://ottoproject.io/)
