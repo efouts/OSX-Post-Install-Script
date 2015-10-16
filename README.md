@@ -97,17 +97,16 @@ Settings Changed
  - Disable send and receive animations in Mail.app
  - Mail.app copied email addresses set to plain "foo@bar.com"
  - ⌘ + enter sends email in Mail.app
- - 
-
-WORK ON THESE (NOT AUTOMATIC)
-=============================
-
-Tweaks
  - Removed Mail.app from dock
  - Removed Maps.app from dock
  - Removed iTunes from dock
  - Removed Facetime.app from dock
  - Removed iBooks from dock
+
+WORK ON THESE (NOT AUTOMATIC)
+=============================
+
+Tweaks
  - Turned off clock in menubar (use iStat)
  - Background generated here: http://matthew.wagerfield.com/flat-surface-shader/
 
