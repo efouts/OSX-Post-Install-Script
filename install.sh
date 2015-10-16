@@ -349,17 +349,17 @@ brew cask install bee iterm2 sourcetree github-desktop chefdk
 #brew cask install textmate
 #defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.macromates.textmate;}'
 
-## Now Defaults to Atom from GitHub
-brew cask install atom
+## Now Defaults to Atom from GitHub (Using /Applications for .app)
+brew cask install atom --appdir=/Applications
 
 #brew cask install textwrangler 
 
 ## PICK A MOCKUP APP
-brew cask install balsamiq-mockups
+brew cask install balsamiq-mockups --appdir=/Applications
 #brew cask install pencil
 
 ## SYSTEM UTILITIES 
-brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm 
+brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm --appdir=/Applications
 
 ## VIRTUALIZATION / CONTAINERS
 ###Removed these by default in case you're deploying a VM
@@ -375,39 +375,40 @@ brew cask install otto
 
 ## GRAPHICS APPS
 ## Set "wacom-tablet" to "wacom-bamboo-tablet" for bamboo users
-brew cask install google-nik-collection wacom-tablet adobe-creative-cloud 
+brew cask install google-nik-collection wacom-tablet adobe-creative-cloud --appdir=/Applications
 
 ## BROWSERS - UNCOMMENT YOUR FAVOURITE AND/OR INSTALL THEM ALL #################################################
 ## INSTALL CHROME, REMOTE DESKTOP, CHROMECAST AND TURN OFF ANNOYING SWIPE LEFT RIGHT BEHAVIOUR
-brew cask install chromecast chrome-remote-desktop-host google-chrome && defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+brew cask install chromecast chrome-remote-desktop-host google-chrome --appdir=/Applications && defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 
 ## INSTALL FIREFOX
-#brew cask install firefox
+#brew cask install firefox --appdir=/Applications
 
 ## INSTALL OPERA
-#brew cask install opera
+#brew cask install opera --appdir=/Applications
 ###############################################################################################################
 
 ## INSTALL DB TOOLS
-brew cask install navicat-for-postgresql 
+brew cask install navicat-for-postgresql --appdir=/Applications
 #This appears to have been removed :(
-#brew cask install toad
+#brew cask install toad --appdir=/Applications
 
 ## INSTANT MESSAGING
-brew cask install colloquy slack
+brew cask install colloquy slack --appdir=/Applications
 #removed adium
-#brew cask install adium
+#brew cask install adium --appdir=/Applications
 
 ## INSTALL BACKUP APPS
-brew cask install backblaze carbon-copy-cloner
+brew cask install backblaze carbon-copy-cloner --appdir=/Applications
 
 ## BROWSER PLUGINS
-brew cask install lastpass-universal silverlight flash-player
-
+brew cask install silverlight flash-player --appdir=/Applications
+###Lastpass Universal removed :(
+#brew cask install lastpass-universal --appdir=/Applications
 ## SPOTIFY
-brew cask install spotify spotify-notifications
+brew cask install spotify spotify-notifications --appdir=/Applications
 ###removed spotify menubar
-#brew cask install spotify-menubar
+#brew cask install spotify-menubar --appdir=/Applications
 
 ## CONFIGURE ITERM TO NOT PROMPT ON QUIT
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
