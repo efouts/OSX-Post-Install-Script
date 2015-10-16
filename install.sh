@@ -330,27 +330,28 @@ brew install caskroom/cask/brew-cask
 brew cask install bee iterm2 sourcetree github-desktop chefdk
 
 ## PICK AN EDITOR
-brew cask install sublime-text
-defaults write com.apple.LaunchServices LSHandlers -array-add "{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.2;}"
+#brew cask install sublime-text
+#defaults write com.apple.LaunchServices LSHandlers -array-add "{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.2;}"
 ## SUBLIME 3 VERSION
 #defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
 
 ## GET A YOSEMITE ICON FOR SUBLIME
-wget -O /Applications/Sublime\ Text\ 2.app/Contents/Resources/Sublime\ Text\ 2.icns https://dribbble.com/shots/1678555-Sublime-Text-3-Replacement-Icon/attachments/265398
+#wget -O /Applications/Sublime\ Text\ 2.app/Contents/Resources/Sublime\ Text\ 2.icns https://dribbble.com/shots/1678555-Sublime-Text-3-Replacement-Icon/attachments/265398
 
 ## INSTALL SUBLIME PACKAGE MANAGEMENT
-wget https://sublime.wbond.net/Package%20Control.sublime-package
-mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/
+#wget https://sublime.wbond.net/Package%20Control.sublime-package
+#mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/
 ## SUBLIME 3 VERSION
 #mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/
 ## GET YOUR HIPSTER ON!
-git clone https://github.com/phyllisstein/HipsterIpsum.git ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/Hipster\ Ipsum
-
+#git clone https://github.com/phyllisstein/HipsterIpsum.git ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/Hipster\ Ipsum
 
 #brew cask install textmate
 #defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.macromates.textmate;}'
 
-#brew cask install atom
+## Now Defaults to Atom from GitHub
+brew cask install atom
+
 #brew cask install textwrangler 
 
 ## PICK A MOCKUP APP
@@ -361,7 +362,8 @@ brew cask install balsamiq-mockups
 brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm 
 
 ## VIRTUALIZATION / CONTAINERS
-brew cask install vmware-fusion virtualbox
+###Removed these by default in case you're deploying a VM
+#brew cask install vmware-fusion virtualbox
 ###Removed the following in favour of new flavours
 #brew cask install boot2docker vagrant
 ###Docker Toolbox
