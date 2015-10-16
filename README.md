@@ -45,16 +45,16 @@ The install.sh script will install the following:
 Commandline Apps
 ================
 
- - AWS CLI - http://aws.amazon.com/cli/
- - Docker - https://docs.docker.com/installation/mac/
- - Vagrant - https://www.vagrantup.com/downloads.html 
- - Homebrew - http://brew.sh 
- - Oh My ZSH! - http://ohmyz.sh 
- - OSX Developer Tools - https://developer.apple.com/downloads/index.action 
- - Git - http://git-scm.com/download/mac
- - Chef DK - https://downloads.getchef.com/chef-dk/mac/
- - caskroom - http://caskroom.io (the real magic here)
- - (Hashicorp's Otto)[https://ottoproject.io/]
+ - [AWS CLI](http://aws.amazon.com/cli/)
+ - [Docker Toolbox](https://www.docker.com/toolbox)
+ - [Vagrant (now part of the Otto install below)](https://www.vagrantup.com/downloads.html) 
+ - [Homebrew](http://brew.sh) 
+ - [Oh My ZSH!](http://ohmyz.sh) 
+ - [OSX Developer Tools](https://developer.apple.com/downloads/index.action) 
+ - [Github Desktop](http://git-scm.com/download/mac)
+ - [Chef DK](https://downloads.getchef.com/chef-dk/mac/)
+ - [caskroom](http://caskroom.io) (the real magic here)
+ - [Hashicorp's Otto]([https://ottoproject.io/)
   
 Settings Changed
 ================
