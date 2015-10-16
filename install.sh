@@ -359,7 +359,7 @@ brew cask install balsamiq-mockups --appdir=/Applications
 #brew cask install pencil
 
 ## SYSTEM UTILITIES 
-brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm --appdir=/Applications
+brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx cyberduck rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm --appdir=/Applications
 
 ## VIRTUALIZATION / CONTAINERS
 ###Removed these by default in case you're deploying a VM
