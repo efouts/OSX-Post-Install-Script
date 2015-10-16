@@ -54,6 +54,7 @@ Commandline Apps
  - Git - http://git-scm.com/download/mac
  - Chef DK - https://downloads.getchef.com/chef-dk/mac/
  - caskroom - http://caskroom.io (the real magic here)
+ - (Hashicorp's Otto)[https://ottoproject.io/]
   
 Settings Changed
 ================
