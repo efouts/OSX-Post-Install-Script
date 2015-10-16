@@ -361,10 +361,15 @@ brew cask install balsamiq-mockups
 brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm 
 
 ## VIRTUALIZATION / CONTAINERS
-brew cask install boot2docker vagrant vmware-fusion virtualbox
+brew cask install vmware-fusion virtualbox
+###Removed the following in favour of new flavours
+#brew cask install boot2docker vagrant
 ###Docker Toolbox
-wget https://github.com/docker/toolbox/releases/download/v1.8.3/DockerToolbox-1.8.3.pkg
-sudo installer -pkg DockerToolbox-1.8.3.pkg -target /
+brew cask install dockertoolbox
+#wget https://github.com/docker/toolbox/releases/download/v1.8.3/DockerToolbox-1.8.3.pkg
+#sudo installer -pkg DockerToolbox-1.8.3.pkg -target /
+###Otto from Hashicorp (Replacing Vagrant brew cask)
+brew cask install otto
 
 ## GRAPHICS APPS
 ## Set "wacom-tablet" to "wacom-bamboo-tablet" for bamboo users
@@ -404,6 +409,7 @@ sudo python get-pip.py
 sudo pip install awscli
 
 ## WARN USER
+###RUB SOME SLEEP ON IT!
 sleep 30
 echo About to close many apps - shutdown the following, or have them cycled for you: 
 echo Address Book, Calendar, Contacts, Dashboard, Dock, Finder, Mail, Safari, SystemUIServer, Terminal, iCal, iTunes
