@@ -5,10 +5,10 @@
 sudo defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 ## SET HOSTNAME IN ALL THE RIGHT PLACES
-sudo scutil --set ComputerName "STRING"
-sudo scutil --set HostName "STRING"
-sudo scutil --set LocalHostName "STRING"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "STRING"
+sudo scutil --set ComputerName "Boushh"
+sudo scutil --set HostName "Boushh"
+sudo scutil --set LocalHostName "Boushh"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Boushh"
 
 ## TURN OFF SCREENSAVER PASSWORD DELAY
 defaults write com.apple.screensaver askForPassword -int 1
@@ -21,24 +21,24 @@ defaults write com.apple.print.PrintingPrefs “Quit When Finished” -bool true
 #defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 ## TRACKPAD: MAP BOTTOM RIGHT CORNER TO RIGHT-CLICK
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+#defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+#defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 ## SHOW PERCENTAGE IN BATTERY STATUS
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 ## DISABLE NATURAL SCROLLING
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+#defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 ## ENABLE TAB IN MODAL DIALOGS
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 ## SCROLL WITH CTRL TO ZOOM
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+#defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+#defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
 ## DISABLE AUTO-CORRECT
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -50,7 +50,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 #defaults write com.apple.finder AppleShowAllFiles -bool true
 
 ##FINDER: SHOW ALL FILENAME EXTENSIONS
-#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 ##FINDER: SHOW STATUS BAR
 #defaults write com.apple.finder ShowStatusBar -bool true
@@ -64,7 +64,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 ##DISABLE THE WARNING WHEN CHANGING A FILE EXTENSION
 #defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 ##AVOID CREATING .DS_STORE FILES ON NETWORK VOLUMES
-#defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 ##AUTOMATICALLY OPEN A NEW FINDER WINDOW WHEN A VOLUME IS MOUNTED
 # defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
@@ -105,7 +105,7 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 # defaults write com.apple.dock expose-group-by-app -bool false
 
 # DON’T SHOW DASHBOARD AS A SPACE
-# defaults write com.apple.dock dashboard-in-overlay -bool true
+defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # REMOVE THE AUTO-HIDING DOCK DELAY
 # defaults write com.apple.Dock autohide-delay -float 0
@@ -117,7 +117,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 # defaults write com.apple.dock no-glass -bool true
 
 # AUTOMATICALLY HIDE AND SHOW THE DOCK
-# defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
 
 # MAKE DOCK ICONS OF HIDDEN APPLICATIONS TRANSLUCENT
 # defaults write com.apple.dock showhidden -bool true
@@ -147,8 +147,8 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 
 ## SHOW ICONS FOR HARD DRIVES, SERVERS, AND REMOVABLE MEDIA ON THE DESKTOP
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+#defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+#defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 ## TURN OFF DISK IMAGE VERIFICATION - POSSIBLE SECURITY PROBLEM - UNCOMMENT IF YOU WANT THIS
@@ -281,7 +281,7 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add “Send” “@U21a
 
 # Time Machine
 # Prevent Time Machine from prompting to use new hard drives as backup volume
-# defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility
 # Enable the debug menu in Address Book
@@ -313,132 +313,33 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
 
-## INSTALL HOMEBREW AND COMMANDLINE TOOLS MISSING IN OSX, ALONG WITH SOME PRETTINESS
+
 xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install wget cmake watch gnu-sed coreutils psutils tmux tmux-mem-cpu-load git zsh mc wget vim
+brew install git zsh bash wget
 
-## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
 sudo curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
-## INSTALL CASKROOM AND ALL APPLICATIONS
 brew install caskroom/cask/brew-cask
- 
-## CODING TOOLS
-brew cask install bee iterm2 sourcetree github-desktop chefdk
 
-## PICK AN EDITOR
-#brew cask install sublime-text
-#defaults write com.apple.LaunchServices LSHandlers -array-add "{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.2;}"
-## SUBLIME 3 VERSION
-#defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
+brew cask install sublime-text
+defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
+wget -O /Applications/Sublime\ Text\ 2.app/Contents/Resources/Sublime\ Text\ 2.icns https://dribbble.com/shots/1678555-Sublime-Text-3-Replacement-Icon/attachments/265398
+wget https://sublime.wbond.net/Package%20Control.sublime-package
+mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/
+git clone https://github.com/phyllisstein/HipsterIpsum.git ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/Hipster\ Ipsum
 
-## GET A YOSEMITE ICON FOR SUBLIME
-#wget -O /Applications/Sublime\ Text\ 2.app/Contents/Resources/Sublime\ Text\ 2.icns https://dribbble.com/shots/1678555-Sublime-Text-3-Replacement-Icon/attachments/265398
 
-## INSTALL SUBLIME PACKAGE MANAGEMENT
-#wget https://sublime.wbond.net/Package%20Control.sublime-package
-#mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/
-## SUBLIME 3 VERSION
-#mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/
-## GET YOUR HIPSTER ON!
-#git clone https://github.com/phyllisstein/HipsterIpsum.git ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages/Hipster\ Ipsum
-
-#brew cask install textmate
-#defaults write com.apple.LaunchServices LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.macromates.textmate;}'
-
-## Now Defaults to Atom from GitHub (Using /Applications for .app)
-brew cask install atom --appdir=/Applications
-
-#brew cask install textwrangler 
-
-## PICK A MOCKUP APP
-brew cask install balsamiq-mockups --appdir=/Applications
-#brew cask install pencil
-
-## SYSTEM UTILITIES 
-brew cask install disk-inventory-x moom unetbootin istat-menus alfred caffeine keepassx cyberduck rescuetime the-unarchiver logmein-client royal-tsx jdownloader lastfm --appdir=/Applications
-
-## VIRTUALIZATION / CONTAINERS
-###Removed these by default in case you're deploying a VM
-#brew cask install vmware-fusion virtualbox
-###Removed the following in favour of new flavours
-#brew cask install boot2docker vagrant
-###Docker Toolbox
-brew cask install dockertoolbox
-#wget https://github.com/docker/toolbox/releases/download/v1.8.3/DockerToolbox-1.8.3.pkg
-#sudo installer -pkg DockerToolbox-1.8.3.pkg -target /
-###Otto from Hashicorp (Replacing Vagrant brew cask)
-brew cask install otto
-
-## GRAPHICS APPS
-## Set "wacom-tablet" to "wacom-bamboo-tablet" for bamboo users
-brew cask install google-nik-collection wacom-tablet adobe-creative-cloud --appdir=/Applications
-
-## BROWSERS - UNCOMMENT YOUR FAVOURITE AND/OR INSTALL THEM ALL #################################################
-## INSTALL CHROME, REMOTE DESKTOP, CHROMECAST AND TURN OFF ANNOYING SWIPE LEFT RIGHT BEHAVIOUR
-brew cask install chromecast chrome-remote-desktop-host google-chrome --appdir=/Applications && defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-
-## INSTALL FIREFOX
-#brew cask install firefox --appdir=/Applications
-
-## INSTALL OPERA
-#brew cask install opera --appdir=/Applications
-###############################################################################################################
-
-## INSTALL DB TOOLS
-brew cask install navicat-for-postgresql --appdir=/Applications
-#This appears to have been removed :(
-#brew cask install toad --appdir=/Applications
-
-## INSTANT MESSAGING
-brew cask install colloquy slack --appdir=/Applications
-#removed adium
-#brew cask install adium --appdir=/Applications
-
-## INSTALL BACKUP APPS
-brew cask install backblaze carbon-copy-cloner --appdir=/Applications
-
-## BROWSER PLUGINS
+brew cask install caffeine --appdir=/Applications
+brew cask install google-chrome --appdir=/Applications 
+brew cask install slack --appdir=/Applications
 brew cask install silverlight flash-player --appdir=/Applications
-###Lastpass Universal removed :(
-#brew cask install lastpass-universal --appdir=/Applications
-## SPOTIFY
 brew cask install spotify spotify-notifications --appdir=/Applications
-###removed spotify menubar
-#brew cask install spotify-menubar --appdir=/Applications
 
-## CONFIGURE ITERM TO NOT PROMPT ON QUIT
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-## INSTALL AWS CLI
-wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
-sudo pip install awscli
-
-## WARN USER
-###RUB SOME SLEEP ON IT!
 sleep 30
-echo About to close many apps - shutdown the following, or have them cycled for you: 
-echo Address Book, Calendar, Contacts, Dashboard, Dock, Finder, Mail, Safari, SystemUIServer, Terminal, iCal, iTunes
-## CLOSE ALL APPS THAT NEED TO BE REFRESHED FOR SETTINGS TO TAKE
-#for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "Terminal" "iCal" "iTunes"; do killall "$app" > /dev/null 2>&1 done
 
-## ADD CYBERDOCK TO DOCK
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Cyberduck.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-
-## ADD SPOTIFY TO DOCK
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Spotify.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-
-## ADD Sublime TO DOCK
-#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sublime Text 2.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-
-## ADD ATOM TO DOCK
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-##Restart Dock
 killall Dock
 
-## RUN A MACOS UPDATE
 sudo softwareupdate --install -all
